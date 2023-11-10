@@ -1,0 +1,26 @@
+.cursor-container {
+    position: sticky;
+    top: 0; 
+  }
+
+.cursor {
+  position: fixed; 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor--inner {
+  position: absolute;
+  background-color: cyan;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  mix-blend-mode: difference;
+  background: radial-gradient(circle, cyan, transparent 20%);
+  
+  box-shadow: 3px 3px 30px 30px rgba(0, 255, 255, 0.7);
+}
